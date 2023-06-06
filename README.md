@@ -6,10 +6,8 @@
 
 Slides are [here](https://docs.google.com/presentation/d/1RnhiRZPOmurK4NXo3u-EY5pMV4XwTxMb2JIhaLad4Ko/edit?usp=sharing)
 
-Final results
-<iframe width="560" height="315" src="https://www.youtube.com/embed/s1yrNHE6b5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-Previous work and sources:
+# Previous work and sources:
 - Starting point for ideas and code: https://github.com/alexstaravoitau/detecting-road-features
 - SVM article (did not end up using this): https://towardsdatascience.com/detecting-vehicles-using-machine-learning-and-computer-vision-e319ee149e10
 - Cascade Classifier OpenCV (did not end up using this): https://github.com/andrewssobral/vehicle_detection_haarcascades
