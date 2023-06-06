@@ -1,5 +1,5 @@
+title: CSE455 Final Project
+description: Anirudh Suresh, Neel Jog, Ayush Nag
 remote_theme: pages-themes/cayman@v0.2.0 #pages-themes/merlot@v0.2.0
 plugins:
 - jekyll-remote-theme
-title: CSE455 Final Project
-description: Anirudh Suresh, Neel Jog, Ayush Nag
