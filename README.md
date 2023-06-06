@@ -2,6 +2,11 @@
 
 # Video Presentation
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/D0ybH6uRbqc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+Slides are [here](https://docs.google.com/presentation/d/1RnhiRZPOmurK4NXo3u-EY5pMV4XwTxMb2JIhaLad4Ko/edit?usp=sharing)
+
+Final results
 <iframe width="560" height="315" src="https://www.youtube.com/embed/s1yrNHE6b5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 # Problem
@@ -32,7 +37,7 @@ However, there are two main problems with this:
 1. Dashed lanes they will form many lines when we might only want one per side
 2. The image can contain noise in the form of other objects with straight lines
 
-Thankfully, there is an easy fix to both of the issues. To fix the multiple lines with dashed lane markers, all we really need to do is to form a “master line” that is calculated by taking the average of the slopes of all the lines on one side while using the most extreme points as the two end points.
+Thankfully, there is an easy fix to both of the issues. To fix the multiple lines with dashed lane markers, all we really need to do is to form a “master line” that is calculated by taking the average of the slopes of all the lines on one side while using the most extreme points as the two end points. The methodology as well as the algorithm for that was derived from (here)[https://github.com/alexstaravoitau/detecting-road-features/blob/master/source/lanetracker/].
 
 To fix the other problem, all we would need to do is remove as many of the distractions as possible. This is done by simply masking the image to contain only a sliver in the middle, where the lane markings remain. Even so, there are many cases in which the line is jittery due to noise within that same location.
 ![Final](lane_tracked2_bad.gif)
