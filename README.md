@@ -9,6 +9,8 @@ The primary goal of our project will be to use the techniques we have learned in
 
 # Datasets
 
+# Set up
+
 # Methodology
 
 # Results
@@ -16,5 +18,8 @@ The primary goal of our project will be to use the techniques we have learned in
 ## Video
 
 # Conclusion
+
+## Limitations
+## Next Steps
 
 # Glossary
