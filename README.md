@@ -39,6 +39,14 @@ Overall, the process in which the lanes were identified are:
 4. Perform the Hough line transform
 5. Clean up the lines
 
+After applying the canny, we got the:
+![Canny](canny.gif)
+
+After the masking, we get:
+![Masked](masked_canny.gif)
+
+After applying the Hough line transform and adding the lines to the original image, we get the [video](https://youtu.be/UmRVmtpJfyk)
+
 Details of how this was applied can be found in the Github, linked above.
 
 Applying both of these methods works remarkably well to detect lanes in most conditions. There are, however, a few limitations that we will mention later.
@@ -75,7 +83,7 @@ Lane tracking seems to be fairly accurate much of the time.
 
 There are a few cases in which lane tracking fails, primarily at points in which there are discrepancies within the road itself, such as cracks, change in pavement type, and so on and so forth. There’s also a few frames in which the lane tracking algorithm failed altogether, due to either failing to detect a line for some odd reason or from failing to find an “average” line.
 
-You can find a video [here](https://youtu.be/vz3kCCF_Vrk)
+You can find a video [here](https://youtu.be/UmRVmtpJfyk)
 
 ### Video
 
@@ -95,7 +103,7 @@ There were several limitations that we found in implementing this project.
 #### Object Detection
 - While the sliding window approach that we used made our search very thorough, it slowed down the object detection process.
 - Our decision to use a neural network meant that we got very good accuracy, but our predictions took a long time. This meant that it was infeasible for us to apply the object detection pipeline to constant video streams.
-- The model did not perform too well on cars that were very far away or very close, likely because we used a fixed window size when doing our search. Our initial approach was to use different window sizes but we realized that using multiple window sizes was slowing down our bounding box detection/drawing considerably. 
+- The model did not perform too well on cars that were very far away or very close, likely because we used a fixed window size when doing our search. Our initial approach was to use different window sizes but we realized that using multiple window sizes was slowing down our bounding box detection/drawing considerably which is why we decided to stick with a single window size.
 
 ## Next Steps
 
