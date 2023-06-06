@@ -6,9 +6,6 @@
 
 Slides are [here](https://docs.google.com/presentation/d/1RnhiRZPOmurK4NXo3u-EY5pMV4XwTxMb2JIhaLad4Ko/edit?usp=sharing)
 
-Final results
-<iframe width="560" height="315" src="https://www.youtube.com/embed/s1yrNHE6b5Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
 # Problem
 
 One of the most important and relevant applications of computer vision is in the context of Autonomous Driving. As we keep making progress in the fields of Artificial Intelligence and Machine Learning, Self-Driving Cars are no longer just a part of futuristic fiction. Many companies around the world such as Waymo, Cruise, and Tesla are investing hundreds and thousands of dollars into autonomous driving research and have begun rolling out fully- or semi-autonomous driving agents. While there are several approaches to implementing autonomous driving, one such approach is mounting an RGB-D camera atop a car to detect pedestrians and other vehicles in the car's vicinity so as to not only estimate the car's current state with respect to the map but also to classify possible obstacles that the car will have to watch out for or circumnavigate in the future. We plan to use vehicular imaging data and object detection data in a slightly unorthodox way to implement lane detection in the context of planning. The primary problem that we will be solving is detecting the lane in which lane the car is currently moving in and where any other cars in the vicinity are.
